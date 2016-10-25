@@ -1,3 +1,11 @@
+addon-manager:
+    labels:
+        io.rancher.container.create_agent: "true"
+        io.rancher.container.agent.role: environmentAdmin
+    image: imikushin/kube-addon-manager-amd64
+    links:
+        - kubernetes
+
 kubelet:
     labels:
         io.rancher.container.dns: "true"
