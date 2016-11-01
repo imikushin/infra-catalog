@@ -40,7 +40,6 @@ proxy:
         - --master=http://kubernetes.kubernetes.rancher.internal
         - --v=2
         - --healthz-bind-address=0.0.0.0
-        - --proxy-mode=userspace
     image: rancher/k8s:v1.4.4-rancher1
     privileged: true
     net: host
