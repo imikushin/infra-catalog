@@ -34,7 +34,7 @@
      - gce
   - variable: DNS_SERVER_IP
     label: DNS Service IP
-    description: Kubernetes cluster DNS service IP: `10.43.0.10` - KubeDNS, `169.254.169.250` - Rancher DNS
+    description: "Kubernetes cluster DNS service IP: `10.43.0.10` - KubeDNS, `169.254.169.250` - Rancher DNS"
     required: true
     default: 10.43.0.10
     type: enum
