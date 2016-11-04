@@ -23,7 +23,7 @@
     default: 24h
     type: string
   - variable: CLOUD_PROVIDER
-    label: Cloud Provider 
+    label: Cloud Provider
     description: The cloud provider on which Kubernetes is running
     required: true
     default: rancher
@@ -34,13 +34,16 @@
      - gce
   - variable: DNS_SERVER_IP
     label: DNS Service IP
-    description: Internal cluster DNS service IP address
+    description: Kubernetes cluster DNS service IP: `10.43.0.10` - KubeDNS, `169.254.169.250` - Rancher DNS
     required: true
     default: 10.43.0.10
     type: enum
     options:
      - 10.43.0.10
      - 169.254.169.250
+    labeledOptions:
+      'KubeDNS': 10.43.0.10
+      'Rancher DNS': 169.254.169.250
 
 kubernetes:
     metadata:
